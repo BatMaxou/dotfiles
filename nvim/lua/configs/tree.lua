@@ -5,7 +5,7 @@ return {
   opts = {
     filters = {
       git_ignored = false,
-      custom = { "^\\.git" },
+      custom = { "^\\.git$" },
     },
     disable_netrw = true,
     hijack_cursor = true,
