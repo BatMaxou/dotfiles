@@ -8,10 +8,10 @@ return {
       custom = { "^\\.git$" },
     },
     disable_netrw = true,
-    hijack_cursor = true,
-    sync_root_with_cwd = true,
+    hijack_cursor = false,
+    sync_root_with_cwd = false,
     update_focused_file = {
-      enable = true,
+      enable = false,
       update_root = false,
     },
     view = {
