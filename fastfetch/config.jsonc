@@ -1,0 +1,147 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "separator": " ",
+    "constants": [
+      "\u001b[38;2;220;215;186m", // fuijiWhite ($1)
+      "\u001b[38;2;200;192;147m", // oldWhite ($2)
+      "\u001b[38;2;22;22;29m", // sumiInk0 ($3)
+      "\u001b[38;2;31;31;40m", // sumiInk1 ($4)
+      "\u001b[38;2;42;42;55m", // sumiInk2 ($5)
+      "\u001b[38;2;54;54;70m", // sumiInk3 ($6)
+      "\u001b[38;2;84;84;109m", // sumiInk4 ($7)
+      "\u001b[38;2;34;50;73m", // waveBlue1 ($8)
+      "\u001b[38;2;45;79;103m", // waveBlue2 ($9)
+      "\u001b[38;2;43;51;40m", // winterGreen ($10)
+      "\u001b[38;2;73;68;60m", // winterYellow ($11)
+      "\u001b[38;2;67;36;43m", // winterRed ($12)
+      "\u001b[38;2;37;37;53m", // winterBlue ($13)
+      "\u001b[38;2;118;148;106m", // autumnGreen ($14)
+      "\u001b[38;2;195;64;67m", // autumnRed ($15)
+      "\u001b[38;2;220;165;97m", // autumnYellow ($16)
+      "\u001b[38;2;232;36;36m", // samuraiRed ($17)
+      "\u001b[38;2;255;158;59m", // roninYellow ($18)
+      "\u001b[38;2;106;169;137m", // waveAqua1 ($19)
+      "\u001b[38;2;101;133;148m", // dragonBlue ($20)
+      "\u001b[38;2;114;113;105m", // fujiGray ($21)
+      "\u001b[38;2;147;138;169m", // springViolet1 ($22)
+      "\u001b[38;2;149;127;184m", // oniViolet ($23)
+      "\u001b[38;2;126;156;216m", // crystalBlue ($24)
+      "\u001b[38;2;159;171;202m", // springViolet2 ($25)
+      "\u001b[38;2;127;180;202m", // springBlue ($26)
+      "\u001b[38;2;163;212;213m", // lightBlue ($27)
+      "\u001b[38;2;122;168;159m", // waveAqua2 ($28)
+      "\u001b[38;2;152;187;108m", // springGreen ($29)
+      "\u001b[38;2;147;160;109m", // boatYellow1 ($30)
+      "\u001b[38;2;192;163;110m", // boatYellow2 ($31)
+      "\u001b[38;2;230;195;132m", // carpYellow ($32)
+      "\u001b[38;2;210;126;153m", // sakuraPink ($33)
+      "\u001b[38;2;255;93;98m", // peachRed ($34)
+      "\u001b[38;2;255;160;102m", // surimiOrange ($35)
+      "\u001b[38;2;113;124;124m", // katanaGray ($36)
+      "\u001b[0m" // reset ($37)
+    ],
+  },
+  "modules": [
+    {
+      "key": "{$32}╭─────────────╮",
+      "type": "custom"
+    },
+    {
+      "key": "{$32}│  User      {#keys}{$32}│",
+      "type": "title",
+      "format": "{user-name}"
+    },
+    {
+      "key": "{$32}│ {$14}󰇅 hname     {#keys}{$32}│",
+      "type": "title",
+      "format": "{host-name}"
+    },
+    {
+      "key": "{$32}│ {$19}󰅐 Uptime    {#keys}{$32}│",
+      "type": "uptime"
+    },
+    {
+      "key": "{$32}│ {$24}{icon} Distro    {#keys}{$32}│",
+      "type": "os",
+      "format": "{?pretty-name}{pretty-name}{?}{/pretty-name}{name}{/} {codename}  {#2}{version} {arch}"
+    },
+    {
+      "key": "{$32}│ {$26} Kernel    {#keys}{$32}│",
+      "type": "kernel"
+    },
+    {
+      "key": "{$32}│ {$22}󰇄 Desktop   {#keys}{$32}│",
+      "type": "de"
+    },
+    {
+      "key": "{$32}│ {$34}󰍛 CPU       {#keys}{$32}│",
+      "type": "cpu",
+      "showPeCoreCount": true
+    },
+    {
+      "key": "{$32}│ {$16}󰉉 Disk      {#keys}{$32}│",
+      "type": "disk",
+      "folders": "/"
+    },
+    {
+      "key": "{$32}│ {$18} Memory    {#keys}{$32}│",
+      "type": "memory"
+    },
+    {
+      "key": "{$32}│ {$20}󰩟 Network   {#keys}{$32}│",
+      "type": "localip",
+      "format": "{ipv4} ({ifname})"
+    },
+    {
+      "type": "shell",
+      "key": "{$32}│ {$29}{icon} Shell     {#keys}{$32}│"
+    },
+    {
+      "type": "terminal",
+      "key": "{$32}│ {$28}{icon} Terminal  {#keys}{$32}│"
+    },
+    {
+      "type": "terminalfont",
+      "key": "{$32}│ {$36}{icon} Term Font {#keys}{$32}│"
+    },
+    {
+      "type": "command",
+      "keyIcon": "",
+      "key": "{$32}│ {$23}{icon} PHP       {#keys}{$32}│",
+      "text": "php --version | head -n1 | cut -d' ' -f2",
+    },
+    {
+      "type": "command",
+      "keyIcon": "",
+      "key": "{$32}│ {$30}{icon} Node      {#keys}{$32}│",
+      "text": "node --version | cut -d'v' -f2",
+    },
+    {
+      "type": "command",
+      "keyIcon": "",
+      "key": "{$32}│ {$15}{icon} Go        {#keys}{$32}│",
+      "text": "go version | cut -d' ' -f3",
+    },
+    {
+      "type": "command",
+      "keyIcon": "󰊢",
+      "key": "{$32}│ {$35}{icon} Git       {#keys}{$32}│",
+      "text": "git version | cut -d' ' -f3",
+    },
+    {
+      "key": "{$32}├─────────────┤",
+      "type": "custom"
+    },
+    {
+      "key": "{$32}│ {$37} Colors    {#keys}{$32}│",
+      "type": "custom",
+      "format": "{$1}⬤ {$14}⬤ {$19}⬤ {$24}⬤ {$26}⬤ {$22}⬤ {$17}⬤ {$16}⬤ {$18}⬤ {$20}⬤ {$28}⬤ {$29}⬤ {$32}⬤ {$30}⬤ {$15}⬤ {$35}⬤ {$33}⬤ {$34}⬤"
+    },
+    {
+      "key": "{$32}╰─────────────╯",
+      "type": "custom",
+      "format": ""
+    }
+  ]
+}
