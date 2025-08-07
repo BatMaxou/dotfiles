@@ -31,6 +31,7 @@ return {
           Red = { fg = colors.palette.samuraiRed },
           Green = { fg = colors.palette.springGreen },
           DarkGreen = { fg = colors.palette.autumnGreen },
+          LightBlue = { fg = colors.palette.lightBlue },
           Blue = { fg = colors.palette.springBlue },
           DarkBlue = { fg = colors.palette.crystalBlue },
           BlueVariant = { fg = colors.palette.waveAqua2 },
@@ -48,6 +49,11 @@ return {
           BlueBackground = { fg = colors.palette.sumiInk0, bg = colors.palette.springBlue },
           SecondaryBackground = { fg = colors.palette.sumiInk0, bg = colors.palette.carpYellow },
           TransparentVioletBackground = { fg = colors.palette.fujiWhite, bg = colors.palette.sumiInk4 },
+          ------------ General | Undercurl ------------
+          LightRedUndercurl = { undercurl = true, sp = colors.palette.peachRed },
+          LightOrangeUndercurl = { undercurl = true, sp = colors.palette.surimiOrange },
+          LightVioletUndercurl = { undercurl = true, sp = colors.palette.springViolet2 },
+          LightBlueUndercurl = { undercurl = true, sp = colors.palette.lightBlue },
           ------------ General | Remove Unwanted Text Decoration -----------
           Boolean = { bold = false },
           Statement = { bold = false },
@@ -174,6 +180,23 @@ return {
           ["NvimTreeGitDirty"] = { link = "Violet" },
           ["NvimTreeGitDeleted"] = { link = "LightRed" },
           ["NvimTreeGitNewIcon"] = { link = "Green" },
+          -- ------------ Diagnostic ------------
+          ["DiagnosticError"] = { link = "LightRed" },
+          ["DiagnosticFloatingError"] = { link = "LightRed" },
+          ["DiagnosticSignError"] = { link = "LightRed" },
+          ["DiagnosticUnderlineError"] = { link = "LightRedUndercurl" },
+          ["DiagnosticWarn"] = { link = "LightOrange" },
+          ["DiagnosticFloatingWarn"] = { link = "LightOrange" },
+          ["DiagnosticSignWarn"] = { link = "LightOrange" },
+          ["DiagnosticUnderlineWarn"] = { link = "LightOrangeUndercurl" },
+          ["DiagnosticInfo"] = { link = "LightViolet" },
+          ["DiagnosticFloatingInfo"] = { link = "LightViolet" },
+          ["DiagnosticSignInfo"] = { link = "LightViolet" },
+          ["DiagnosticUnderlineInfo"] = { link = "LightVioletUndercurl" },
+          ["DiagnosticHint"] = { link = "LightBlue" },
+          ["DiagnosticFloatingHint"] = { link = "LightBlue" },
+          ["DiagnosticSignHint"] = { link = "LightBlue" },
+          ["DiagnosticUnderlineHint"] = { link = "LightBlueUndercurl" },
         }
       end,
     })

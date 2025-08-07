@@ -28,4 +28,5 @@ return {
   require("configs.auto-save"),
   require("configs.autotag"),
   require("configs.scroll"),
+  require("configs.diagnostic"),
 }
