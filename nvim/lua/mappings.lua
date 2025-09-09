@@ -21,6 +21,8 @@ map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle relative number" })
 
 map("n", "à", "0", { desc = "Move to the beginning of the line" })
 map({ "n", "v" }, "<S-b>", "e", { desc = "End Word" })
+map({ "n", "v" }, "<S-j>", "b", { desc = "Start Word" })
+map({ "n", "v" }, "<S-l>", "e", { desc = "End Word" })
 
 map("n", "<leader>,", "$a,", { desc = "Add ',' at the end of a line" })
 map("n", "<leader>;", "$a;<esc>", { desc = "Add ';' at the end of a line" })
