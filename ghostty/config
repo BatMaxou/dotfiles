@@ -13,7 +13,7 @@
 # all available config options and their default values.
 
 ### THEME
-theme = ayu
+theme = Ayu
 
 ### STYLE
 font-family = Monocraft
