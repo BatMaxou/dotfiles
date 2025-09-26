@@ -98,8 +98,14 @@
       "key": "{$32}│ {$29}{icon} Shell     {#keys}{$32}│"
     },
     {
+      "type": "command",
+      "keyIcon": "",
+      "key": "{$32}│ {$28}{icon} Neovim    {#keys}{$32}│",
+      "text": "nvim --version | head -n1 | cut -d' ' -f2",
+    },
+    {
       "type": "terminal",
-      "key": "{$32}│ {$28}{icon} Terminal  {#keys}{$32}│"
+      "key": "{$32}│ {$27}{icon} Terminal  {#keys}{$32}│"
     },
     {
       "type": "terminalfont",
