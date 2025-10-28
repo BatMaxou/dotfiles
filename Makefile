@@ -21,3 +21,9 @@ starship:
 wallpapers:
 	@ln -s ~/.dotfiles/wallpapers/backgrounds ~/.local/share/backgrounds
 .PHONY: wallpapers
+
+finder:
+	@sudo apt install fd-find
+	@sudo apt install ripgrep
+	@ln -s $(which fdfind) ~/.local/bin/fd
+.PHONY: finder

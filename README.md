@@ -5,6 +5,12 @@ git clone git@github.com:BatMaxou/dotfiles.git ~/.dotfiles
 
 ```
 
+## File Finder
+
+```bash
+make finder
+```
+
 ## Zsh
 
 ### Requirements

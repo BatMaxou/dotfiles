@@ -16,6 +16,7 @@
 theme = Ayu
 
 ### STYLE
+selection-background = #938AA9
 font-family = Monocraft
 font-style-bold = false
 font-size = 9.9

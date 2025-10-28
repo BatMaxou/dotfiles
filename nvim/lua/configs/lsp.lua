@@ -4,7 +4,6 @@ return {
   dependencies = {
     { "mason-org/mason.nvim", opts = {} },
     "mason-org/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
     -- want to use blink instead of cmp
     "saghen/blink.cmp",
     -- Allows extra capabilities provided by nvim-cmp
@@ -185,24 +184,19 @@ return {
     -- for you, so that they are available from within Neovim.
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
-      "stylua",
-      "prettierd",
-      "php-cs-fixer",
-      "jq",
+      -- add linter here
     })
+
+    require('mason-lspconfig').setup {
+      ensure_installed = ensure_installed,
+    }
 
     for server, config in pairs(servers) do
       if not vim.tbl_isempty(config) then
         vim.lsp.config(server, config)
+        vim.lsp.enable(server)
       end
     end
 
-    -- After configuring our language servers, we now enable them
-    require('mason-lspconfig').setup {
-      -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
-      ensure_installed = {},
-      -- automatically run vim.lsp.enable() for all servers that are installed via Mason
-      automatic_enable = true,
-    }
   end,
 }

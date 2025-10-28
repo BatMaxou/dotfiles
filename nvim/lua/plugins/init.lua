@@ -2,7 +2,6 @@ return {
   require("configs.kanagawa"),
   require("configs.statusline"),
   require("configs.oil"),
-  require("configs.copilot"),
   require("configs.auto-indent"),
   require("configs.treesitter"),
   require("configs.which-key"),
@@ -18,6 +17,7 @@ return {
   require("configs.gitgraph"),
   require("configs.auto-pairs"),
   require("configs.surround"),
+  require("configs.surround-help"),
   require("configs.comment"),
   require("configs.treesitter-textobjects"),
   require("configs.hop"),
@@ -29,4 +29,7 @@ return {
   require("configs.autotag"),
   require("configs.scroll"),
   require("configs.diagnostic"),
+  require("configs.winbar"),
+  require("configs.copilot"),
+  -- require("configs.sidekick")
 }
