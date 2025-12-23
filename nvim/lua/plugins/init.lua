@@ -30,6 +30,6 @@ return {
   require("configs.scroll"),
   require("configs.diagnostic"),
   require("configs.winbar"),
-  require("configs.copilot"),
-  -- require("configs.sidekick")
+  require("configs.supermaven"),
+  -- require("configs.copilot"),
 }
