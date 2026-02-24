@@ -31,5 +31,6 @@ return {
   require("configs.diagnostic"),
   require("configs.winbar"),
   require("configs.supermaven"),
+  require("configs.claude"),
   -- require("configs.copilot"),
 }

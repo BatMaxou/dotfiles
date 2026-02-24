@@ -70,10 +70,10 @@ return {
           -- E.g.: autocmd TermOpen * setlocal winhighlight=Normal:NormalDark
           NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
           ------------ FZF ------------
-          ["FzfLuaBorder"] = { link = "LightOrange" },
-          ["FzfLuaTitle"] = { link = "LightOrange" },
-          ["FzfLuaScrollBorderFull"] = { link = "LightOrange" },
-          ["FzfLuaScrollBorderEmpty"] = { link = "LightOrange" },
+          ["FzfLuaBorder"] = { link = "Pink" },
+          ["FzfLuaTitle"] = { link = "Pink" },
+          ["FzfLuaScrollBorderFull"] = { link = "Pink" },
+          ["FzfLuaScrollBorderEmpty"] = { link = "Pink" },
           ------------ Markdown ------------
           ["@markup.link.url.markdown_inline"] = { link = "Blue" }, -- (url)
           ["@markup.link.label.markdown_inline"] = { link = "Orange" }, -- [label]
@@ -171,8 +171,8 @@ return {
           ["NoiceCmdlineIconCmdline"] = { link = "Blue" },
           ["NoiceCmdlinePopupBorderHelp"] = { link = "Green" },
           ["NoiceCmdlineIconHelp"] = { link = "Green" },
-          ["NoiceCmdlinePopupBorderSearch"] = { link = "LightOrange" },
-          ["NoiceCmdlineIconSearch"] = { link = "LightOrange" },
+          ["NoiceCmdlinePopupBorderSearch"] = { link = "Pink" },
+          ["NoiceCmdlineIconSearch"] = { link = "Pink" },
           ["NoiceFormatLevelInfo"] = { link = "Blue" },
           ["NoiceFormatLevelWarn"] = { link = "LightOrange" },
           ["NoiceFormatLevelError"] = { link = "LightRed" },
