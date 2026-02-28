@@ -8,11 +8,6 @@ map("i", "<C-l>", "<Right>", { desc = "Move right" })
 map("i", "<C-j>", "<Down>", { desc = "Move down" })
 map("i", "<C-k>", "<Up>", { desc = "Move up" })
 
-map("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
-map("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
-map("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
-map("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
-
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "General save file" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "General copy whole file" })
 
@@ -55,3 +50,12 @@ map("v", "<leader>ss", "<cmd>Silicon<CR>", { desc = "Code Screenshot" })
 
 ------------ notifier ------------
 map("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss all notifications" })
+
+------------ vscode like ------------
+map("n", "<C-j>", ":m .+1<CR>==", { desc = "Move line down" })
+map("n", "<C-k>", ":m .-2<CR>==", { desc = "Move line up" })
+map("v", "<C-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+map("v", "<C-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+map("v", "<", "<gv", { desc = "Indent left and reselect" })
+map("v", ">", ">gv", { desc = "Indent right and reselect" })
+map("n", "<S-j>", "mzJ`z", { desc = "Join lines" })

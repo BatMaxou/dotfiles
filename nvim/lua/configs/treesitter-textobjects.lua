@@ -21,15 +21,6 @@ return {
             ["il"] = { query = "@loop.inner", desc = "Select inner part of a loop" },
           },
         },
-        swap = {
-          enable = true,
-          swap_next = {
-            ["<C-j>"] = { query = "@parameter.inner", desc = "Swap next parameter" },
-          },
-          swap_previous = {
-            ["<C-k>"] = { query = "@parameter.inner", desc = "Swap previous parameter" },
-          },
-        },
         move = {
           enable = true,
           set_jumps = true,
