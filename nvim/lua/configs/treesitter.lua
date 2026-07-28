@@ -22,6 +22,7 @@ return {
     local ensureInstalled = {
       "bash",
       "css",
+      "scss",
       "dockerfile",
       "git_config",
       "git_rebase",

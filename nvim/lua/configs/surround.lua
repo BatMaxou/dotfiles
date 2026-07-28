@@ -2,10 +2,14 @@ return {
   "kylechui/nvim-surround",
   version = "*",
   event = "VeryLazy",
-  opts = {},
-  keys = {
-    { "<leader>sw", "<Plug>(nvim-surround-normal)iw", mode = { "n", "v" }, desc = "Add word surrounding" },
-    { "<leader>sd", "<Plug>(nvim-surround-delete)", mode = { "n", "v" }, desc = "Delete surrounding" },
-    { "<leader>sc", "<Plug>(nvim-surround-change)", mode = { "n", "v" }, desc = "Change surrounding" },
-  },
+  init = function()
+    vim.g.nvim_surround_no_mappings = true
+  end,
+  config = function()
+    require("nvim-surround").setup()
+    vim.keymap.set("n", "<leader>sa", "<Plug>(nvim-surround-normal)", { desc = "Add surrounding" })
+    vim.keymap.set("x", "<leader>sa", "<Plug>(nvim-surround-visual)", { desc = "Add surrounding" })
+    vim.keymap.set("n", "<leader>sd", "<Plug>(nvim-surround-delete)", { desc = "Delete surrounding" })
+    vim.keymap.set("n", "<leader>sc", "<Plug>(nvim-surround-change)", { desc = "Change surrounding" })
+  end,
 }
